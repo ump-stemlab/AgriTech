@@ -5,6 +5,7 @@ import asynccontrol
 
 try:
     asyncio.ensure_future(asynccontrol.pumpcontrol())
+    asyncio.ensure_future(asynccontrol.pumpcontrol2())
     asynccontrol.loop.run_forever()
 
 except KeyboardInterrupt:
@@ -12,7 +13,3 @@ except KeyboardInterrupt:
 finally:
     print("Closing loop")
     asynccontrol.loop.close()
-
-while 1:
-    print("Test print")
-    sleep(2)

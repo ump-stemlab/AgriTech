@@ -1,0 +1,12 @@
+Pins assignment
+
+Pump Control
+in1 = 24
+in2 = 23
+enA = 25
+in3 = 14 
+in4 = 15
+enB = 18    
+
+Flo wmeter
+2                  h86uytv   

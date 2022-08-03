@@ -1,6 +1,7 @@
 
 import RPi.GPIO as GPIO
 import time
+import vdata
 
 GPIO.cleanup
 

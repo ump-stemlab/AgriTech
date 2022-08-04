@@ -1,0 +1,1 @@
+global humidity, pressure, ambient_temperature

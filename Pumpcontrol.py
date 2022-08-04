@@ -12,6 +12,7 @@ in3 = 14
 in4 = 15
 enB = 18
 
+GPIO.setwarnings(False)			#disable warnings
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(in1, GPIO.OUT)
 GPIO.setup(in2, GPIO.OUT)
@@ -29,7 +30,7 @@ pB= GPIO.PWM(enB, 500)
 pA.start(0)
 pB.start(0)
 
-while True:
+async def pump_1():
 # initial value to final value, with increment of 5
     for dc in range(0, 101, 10):
         pA.ChangeDutyCycle(dc)

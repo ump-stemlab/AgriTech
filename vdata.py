@@ -1,1 +1,1 @@
-global humidity, pressure, ambient_temperature
+global humidity, pressure, ambient_temperature,flow,main_pump_state

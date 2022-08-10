@@ -15,7 +15,7 @@ async def checkTemp():
         vdata.humidity  = bme280_data.humidity
         vdata.pressure  = bme280_data.pressure
         vdata.ambient_temperature = bme280_data.temperature
-        print(vdata.humidity, vdata.pressure, vdata.ambient_temperature)
-        await asyncio.sleep(1)
+        #print(vdata.humidity, vdata.pressure, vdata.ambient_temperature)
+        await asyncio.sleep(5)
     
 loop= asyncio.get_event_loop()

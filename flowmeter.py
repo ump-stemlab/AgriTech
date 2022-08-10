@@ -1,6 +1,7 @@
 import asyncio
 import RPi.GPIO as GPIO
 import time, sys
+import vdata
 
 FLOW_SENSOR_GPIO = 13
 GPIO.setmode(GPIO.BCM)
@@ -23,8 +24,8 @@ async def flowcount():
         start_counter = 1
         await asyncio.sleep(1)
         start_counter = 0
-        flow = (count / 7.5) # Pulse frequency (Hz) = 7.5Q, Q is flow rate in L/min.
-        print("The flow is: %.3f Liter/min" % (flow))
+        vdata.flow = (count / 7.5) # Pulse frequency (Hz) = 7.5Q, Q is flow rate in L/min.
+        print("The flow is: %.3f Liter/min" % (vdata.flow))
         #publish.single("/Garden.Pi/WaterFlow", flow, hostname=MQTT_SERVER)
         count = 0
         await asyncio.sleep(5)

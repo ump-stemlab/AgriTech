@@ -1,3 +1,7 @@
+Needed installations
+sudo pip3 install RPi.bme280
+sudo pip3 install adafruit-io
+
 Pins assignment
 
 Pump Control
@@ -8,5 +12,4 @@ in3 = 14
 in4 = 15
 enB = 18    
 
-Flo wmeter
-2                  h86uytv   
+  

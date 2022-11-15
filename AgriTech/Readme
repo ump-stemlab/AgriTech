@@ -1,0 +1,19 @@
+--------Needed installations--------
+sudo pip3 install RPi.bme280
+sudo pip3 install adafruit-io
+
+--------Pins assignment--------
+
+#Pump Control
+in1 = 24
+in2 = 23
+enA = 25
+in3 = 14 
+in4 = 15
+enB = 18    
+
+#Flow Meter
+FLOW_SENSOR_GPIO = 13
+
+#Pump relay
+Main Pump = 21
